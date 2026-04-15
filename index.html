@@ -1,8 +1,39 @@
 <html>
 <head>
     <title>Ritito</title>  
+    <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        .grid
+        {
+            display: grid;
+            grid-template-columns: repeat(30, 24px);
+            border-left: 1px solid #bdb9b9;
+            border-top: 1px solid #bdb9b9;
+        }
+        .cell
+        {
+            width: 24px;
+            height: 22px;
+            border-right: 1px solid #bdb9b9;
+            border-bottom: 1px solid #bdb9b9;
+            background: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Ritito</h1>
     <p>This is a simple web page created for Ritito.</p> 
+    
+    <div class="grid" id="grid"></div>
+
+    <script>
+        const grid = document.getElementById('grid');
+        for (let iv = 0; iv < 30*50; iv++)
+         {
+            const div = document.createElement('div');
+            div.className = 'cell';
+            grid.appendChild(div);
+         }
+    </script>
 </html>
