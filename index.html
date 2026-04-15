@@ -9,8 +9,8 @@
             display: grid;
             width: 100vw;
             height: 100vh;
-            grid-template-columns: repeat(31, 1fr);
-            grid-template-rows: repeat(20, 1fr);
+            grid-template-columns: repeat(60, 1fr);
+            grid-template-rows: repeat(30, 1fr);
             border-left: 1px solid #bdb9b9;
             border-top: 1px solid #bdb9b9;
         }
@@ -28,7 +28,7 @@
 
     <script>
         const grid = document.getElementById('grid');
-        for (let iv = 0; iv < 30*20; iv++)
+        for (let iv = 0; iv < 60*30; iv++)
          {
             const div = document.createElement('div');
             div.className = 'cell';
