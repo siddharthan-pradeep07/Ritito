@@ -71,14 +71,29 @@
             font-size: 16px;
             padding: 12px 16px;
             color: #333333;
-            border-bottom: 1px solid #53525277;
+            border-bottom: 1px solid #ffffff00;
+        }
+
+        #printbed
+        {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            border: 1.5px solid #53525277;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #c1b4d1cc;
         }
 
     </style>
 </head>
 <body>
     
-    <div id="sidepanel"></div>
+    <div id="sidepanel">
+        <div id="printbed"></div>
+    </div>
     <div id="bottompanel">
         <p style="font-family: 'Google Sans Flex';">Be the greatest</p>
         <p style="font-family: 'Montserrat';">Be the greatest</p>
