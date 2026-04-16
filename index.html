@@ -95,11 +95,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 32px;
+            font-size: clamp(14px, 2.5vw, 40px);
             color: #000000d3;
             pointer-events: none;
             white-space: pre-wrap;
             text-align: center;
+            width: 85%;
+            word-break: break-word;
         }
 
         #download-panel
@@ -119,9 +121,11 @@
             height: 100%;
             border: none;
             border-radius: 10px;
-            background: #db688e9f;
-            font-size: clamp(10px, 1vw, 14px);
-            color: #363636d3;
+            background: #a19edd85;
+            font-size: clamp(16px, 1vw, 14px);
+            font-family: Google Sans Flex, sans-serif;
+
+            color: #222222dc;
             cursor: pointer;
         }
 
@@ -135,7 +139,7 @@
             <p style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); font-size: 16px; color: #00000086;">Printer Bed</p>
         </div>
         <div id="download-panel">
-            <button id="download-panel-button">⇩Download Stl</button>
+            <button id="download-panel-button">Download .gcode</button>
         </div>
     </div>
     <div id="bottompanel">
