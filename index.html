@@ -79,8 +79,8 @@
 
         #printbed
         {
-            width: min(60vh, 45vw);
-            height: min(60vh, 45vw);
+            width: min(85vh, 70vw);
+            height: min(85vh, 70vw);
             border-radius: 10px;
             border: 2.8px solid #4d4c4caf;
             position: absolute;
@@ -132,6 +132,45 @@
             cursor: pointer;
         }
 
+        #download-panel-button:hover
+        {
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid #53525277;
+            border-radius: 10px;
+            background: #a19edd6e;
+            font-size: clamp(16px, 1vw, 14px);
+            font-family: Google Sans Flex, sans-serif;
+            color: #222222dc;
+            cursor: pointer;
+        }
+
+        #font-panel-button
+        {
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid #53525277;
+            border-radius: 10px;
+            background: #a19edd3a;
+            font-size: clamp(16px, 1vw, 14px);
+            font-family: Google Sans Flex, sans-serif;
+
+            color: #222222dc;
+            cursor: pointer;
+        }
+        #font-panel-button:hover
+        {
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid #53525277;
+            border-radius: 10px;
+            background: #a19edd6e;
+            font-size: clamp(16px, 1vw, 14px);
+            font-family: Google Sans Flex, sans-serif;
+            color: #222222dc;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -146,11 +185,11 @@
         </div>
     </div>
     <div id="bottompanel">
-        <p style="font-family: 'Google Sans Flex';">Be the greatest</p>
-        <p style="font-family: 'Montserrat';">Be the greatest</p>
-        <p style="font-family: 'Orbitron';">Be the greatest</p>
-        <p style="font-family: 'Pirata One';">Be the greatest</p>
-        <p style="font-family: 'Sekuya';">Be the greatest</p>
+        <button id="font-panel-button" style="font-family: 'Google Sans Flex';">Be the greatest</button>
+        <button id="font-panel-button" style="font-family: 'Montserrat';">Be the greatest</p>
+        <button id="font-panel-button" style="font-family: 'Orbitron';">Be the greatest</p>
+        <button id="font-panel-button" style="font-family: 'Pirata One';">Be the greatest</p>
+        <button id="font-panel-button"style="font-family: 'Sekuya';">Be the greatest</p>
 
     </div>
     <div id="textbox">
