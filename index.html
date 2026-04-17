@@ -79,7 +79,7 @@
             display: block;
             width: calc(100% - 24px);
             height: auto;
-            margin: 4px 12px;
+            margin: 9px 12px;
             border-radius: 8px;
         }
 
@@ -199,7 +199,7 @@
 
     </div>
     <div id="textbox">
-        <input type="text" placeholder="Type here....." maxlength="200">
+        <input type="text" placeholder="Type here....." maxlength="400">
     </div>
     <div class="grid" id="grid"></div>
 
@@ -219,6 +219,15 @@
         {
             bedText.textContent = input.value; 
         });
+
+        document.querySelectorAll('#font-panel-button').forEach(button =>
+        {
+            button.addEventListener('click', () =>
+            {
+                bedText.style.fontFamily = button.style.fontFamily;
+            });
+        });
+
     </script>
     </body>
 </html>
